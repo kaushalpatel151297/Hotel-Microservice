@@ -24,7 +24,7 @@ spring:
           predicates:
             - Path=/api/v1/hotel/**
 
-        
+
 eureka:
   instance:
     prefer-ip-address: true
@@ -32,4 +32,4 @@ eureka:
     fetch-registry: true
     register-with-eureka: true
     service-url:
-      defaultZone: http://localhost:8761/eureka
+      defaultZone: http://localhost:8761/eureka 0
