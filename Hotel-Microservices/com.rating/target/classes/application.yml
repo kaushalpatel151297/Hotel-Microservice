@@ -1,0 +1,28 @@
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+server:
+  port: 8083
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    url: jdbc:mysql://localhost:3307/Review?serverTimezone=UTC
+    username: root
+  application:
+    name: RATING-SERVICE
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+      dialect: org.hibernate.dialect.MySQL8Dialect
+      format_sql: true
+    show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://localhost:8761/eureka

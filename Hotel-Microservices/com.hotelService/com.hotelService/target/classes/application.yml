@@ -1,0 +1,18 @@
+spring:
+  application:
+      name: HOTEL-SERVICE
+  data:
+    mongodb:
+      authentication-database: admin
+      database: hotelservice
+      host: localhost
+      password: root
+      port: 27017
+      username: root
+      uri: 'mongodb://localhost/hotelservice'
+server:
+  port: 8082
+eureka:
+  client:
+    service-url:
+      defaultZone:  http://localhost:8761/eureka
